@@ -6,6 +6,9 @@ html,body{
 *{
 	box-sizing:border-box;
 }
+img{
+    vertical-align: bottom;
+}
 a{
 	color:#333333;
 	text-decoration:none;
@@ -16,19 +19,19 @@ a:hover{
 .wrap{
 	width:100%;
 	height:auto;
-	border:1px solid black;
+	border:none;
 	box-sizing:border-box;
 }
 .header{
 	width:100%;
 	height:100px;
-	border:1px solid #888888;
+	border:none;
 		
 }
 .section{
 	width:100%;
 	height:auto;
-	border:1px solid red;
+	border:none;
 }
 .footer{
 	width:100%;
@@ -67,15 +70,15 @@ a:hover{
 }
 .content-list{
 	width:100%;
-	border:1px solid black;
+	border-bottom:1px dotted #eeeeee;
 	border-left:none;
 	border-right:none;
 	overflow-x:hidden;
 }
 .main-list{
 	width:100%;
-	height:150px;
-	background-color:lightblue;
+	height:auto;
+	background-color:transparent;
 }
 .event-tab{
 	width:100%;
@@ -83,13 +86,14 @@ a:hover{
 }
 .tabs{
 	width:100%;
-	height:50px;
-	background-color:darkred;
+	height:auto;
+	background-color:transparent;
+    margin:10px 0;
 }
 .tab-contents{
 	width:100%;
-	height:200px;
-	background-color:blue;
+	height:auto;
+	background-color:transparent;
 }
 .t-c1{
 	width:100%;
@@ -100,7 +104,9 @@ a:hover{
 }
 .product-list>ul{
 	list-style:none;
-	padding:0; margin:0;
+	padding:0; margin:10px auto;
+    width:80%
+    
 }
 .product-list>ul>li{
 	
@@ -114,7 +120,7 @@ a:hover{
 [class*="col-"] {
   float: left;
   padding: 15px;
-  border: 1px solid red;
+  border: none;
 }
 
 .col-xs-1 {width: 8.33%;}
@@ -205,4 +211,47 @@ a:hover{
 	border:1px solid white;
 	color:white;
 	background:transparent;
+}
+table, th, td{
+     border-collapse:collapse;
+}
+.list-icon{
+    width:80%;
+    margin:20px auto;
+    border:2px solid #222222;
+    
+}
+.list-icon th, .list-icon td{
+    border:1px solid #aaaaaa;
+    height:70px;
+    text-align:center;
+   
+}
+.new{
+    color:blue;
+}
+.birth{
+    color:red;
+}
+
+.tabs>ul{
+    list-style:none;
+    padding:0; margin:0;
+    text-align:center;
+}
+.tabs>ul>li{
+    width:20%;
+    display:inline-block;
+    border:1px solid #333333;
+    
+}
+.tabs>ul img{
+    width:100%;
+    vertical-align:bottom;
+}
+.t-c1 img{
+    width:100%
+}
+.product-list img{
+    width:100%
 }
