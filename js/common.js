@@ -10,6 +10,12 @@ $(function(){
 	
 	});
 
-
+	$(".m-close").click(function(){
+		$(".m-nav").stop().animate({left:"-105%"});
+		
+	});
+	$(".menu-bar").click(function(){
+		$(".m-nav").stop().animate({left:0});
+	});
 
 });
