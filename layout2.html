@@ -13,7 +13,8 @@
 <style>
 .fotorama__html{position:relative !important;}
 .fotorama__html div{width:100%;height:100%; display:table; text-align:center;}
-.fotorama__html a{z-index:1; display:table-cell; vertical-align:middle;  height:100%; color:white;}
+.fotorama__html span{z-index:1; display:table-cell; vertical-align:middle; height:100%; text-align:center;}
+.fotorama__html a{  display:inline-block; width:50%; height:20%; color:white; background:black; }
  .swiper-container {
       width: 105%;
       height: 100%;
@@ -52,7 +53,7 @@
 <script src="js/common.js"></script>
 <script>
 	 $(document).ready(function(e) {
-            $(".fotorama").on("click",function(){
+            $(".fotorama__html a").on("click",function(){
                      
                 var href = $(this).find("a").attr('href');
                 location.href=href;
@@ -132,25 +133,31 @@
 	
 	<section class="section">
 		<div class="main-slider">
-			<div class="fotorama" data-arrows="false" data-click="false" data-nav="false">
-			  <div data-img="http://s.fotorama.io/1.jpg"><a href="http://ssejong.cafe24.com">클릭</a></div>
-			  <div data-img="http://s.fotorama.io/2.jpg"><a href="http://ssejong.cafe24.com"></a></div>
-			  
+			<div class="fotorama" data-width="100%" data-arrows="false" data-click="true" data-nav="false">
+               
+				<div data-img="http://s.fotorama.io/1.jpg">
+					<span><a href="http://ssejong.cafe24.com">클릭</a></span>
+				</div>
+				<div data-img="http://s.fotorama.io/2.jpg">
+					<span><a href="http://ssejong.cafe24.com">클릭</a></span>
+				</div>
+			     
+                
 			</div>
 		
 		</div>
 		<div class="content-list">
 			<div class="swiper-container">
 				<div class="swiper-wrapper">
-				  <div class="swiper-slide">clist 1</div>
-				  <div class="swiper-slide">clist 2</div>
-				  <div class="swiper-slide">clist 3</div>
-				  <div class="swiper-slide">clist 4</div>
-				  <div class="swiper-slide">clist 5</div>
-				  <div class="swiper-slide">clist 6</div>
-				  <div class="swiper-slide">clist 7</div>
-				  <div class="swiper-slide">clist 8</div>
-				  <div class="swiper-slide">clist 9</div>
+				  <div class="swiper-slide"><a href="http://ssejong.cafe24.com">clist 1</a></div>
+				  <div class="swiper-slide"><a href="http://ssejong.cafe24.com">clist 2</a></div>
+				  <div class="swiper-slide"><a href="http://ssejong.cafe24.com">clist 3</a></div>
+				  <div class="swiper-slide"><a href="http://ssejong.cafe24.com">clist 4</a></div>
+				  <div class="swiper-slide"><a href="http://ssejong.cafe24.com">clist 5</a></div>
+				  <div class="swiper-slide"><a href="http://ssejong.cafe24.com">clist 6</a></div>
+				  <div class="swiper-slide"><a href="http://ssejong.cafe24.com">clist 7</a></div>
+				  <div class="swiper-slide"><a href="http://ssejong.cafe24.com">clist 8</a></div>
+				  <div class="swiper-slide"><a href="http://ssejong.cafe24.com">clist 9</a></div>
 				  <div class="swiper-slide"></div>
 				</div>
 				
@@ -183,8 +190,17 @@
                 </ul>
             </div>
 			<div class="tab-contents">
-				<div class="t-c1" id="t-c1">
+				<div class="t-c1" id="t-cv1">
                     <img src="images/slide1.jpg" alt="새우" width="200">
+                </div>
+                <div class="t-c1" id="t-cv2">
+                    <img src="images/slide2.jpg" alt="새우" width="200">
+                </div>
+                <div class="t-c1" id="t-cv3">
+                    <img src="images/slide3.jpg" alt="새우" width="200">
+                </div>
+                <div class="t-c1" id="t-cv4">
+                    <img src="images/slide4.jpg" alt="새우" width="200">
                 </div>
 			</div>
 		</div>
