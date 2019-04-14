@@ -332,6 +332,9 @@ table, th, td{
 .product-list p{
     font-size:1.4vw;
 }
+.main-nav{
+    display:none;
+}
 
 @media screen and (min-width:768px){
     .col-sm-1 {width: 8.33%;}
@@ -349,4 +352,77 @@ table, th, td{
     .product-list p{
         font-size:1.6vw;
     }
+    
+}
+
+@media screen and (min-width:1000px){
+    .nav{
+        width:100%;
+        position:relative;
+        left:0; top:0;
+        height:auto;
+    }
+    .main-nav{
+        display:block;
+        width:100%;
+    }
+    .menu-bar, m-nav{
+        display:none;
+    }
+    .main-nav>ul{
+        list-style:none;
+        padding:0; margin:0;
+        text-align:center;
+    }
+    .main-nav>ul>li{
+        display:inline-block;
+        width:15%;
+        padding:0 0;
+        position:relative;
+        
+    }
+    .header{
+        height:auto;
+        padding-bottom:20px;
+        position:relative;
+        z-index:9999999;
+    }
+    .main-nav>ul>li>a{
+        color:white;
+        font-weight:bold;
+        background:orangered;
+        display:block;
+        height:100%;
+        padding:10px 0;
+    }
+    
+    .main-drop-menu{
+        list-style:none;
+        margin:0; padding:0;
+        position:absolute;
+        top:100%; left:0;
+        width:100%;
+        height:0;
+        overflow:hidden;
+        -webkit-transition:0.5s;
+    }
+    .main-drop-menu>li{
+        padding:0 10px;
+        background:orange;
+    }
+    .main-drop-menu>li>a{
+        display:block;
+        padding:10px;
+        background:orange;
+        border-bottom:1px dotted white;
+        
+    }
+    .main-drop-menu>li:last-child a{
+        border-bottom:none;
+    }
+    
+    .main-nav>ul>li:hover .main-drop-menu{
+        height:250px;
+    }
+    
 }
